@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Ereality Extension",
+    "version": "0.1",
+    "permissions": [
+        "http://www.ereality.ru/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://www.ereality.ru/core*"],
+            "js": ["content_core.js"]
+        }
+    ],
+    "web_accessible_resources": ["core.js"]
+}
