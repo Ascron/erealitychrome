@@ -3,7 +3,8 @@
     "name": "Ereality Extension",
     "version": "0.1",
     "permissions": [
-        "http://www.ereality.ru/*"
+        "http://www.ereality.ru/*",
+        "http://sp.erclans.ru/*"
     ],
     "content_scripts": [
         {
