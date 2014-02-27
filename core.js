@@ -7,13 +7,13 @@
     function init () {
         pluginContainer.load();
 
-        xhttp({
-            method: "POST",
-            url: "http://sp.erclans.ru/evgeska_prof.php?calc=heroesinfo",
-            data: "prof=phoenix&submit=1"
-        }, function(response){
-            console.log(response);
-        });
+//        xhttp({
+//            method: "POST",
+//            url: "http://sp.erclans.ru/evgeska_prof.php?calc=heroesinfo",
+//            data: "prof=phoenix&submit=1"
+//        }, function(response){
+//            console.log(response);
+//        });
     }
 
     var pluginContainer = (function(plugins){
@@ -21,8 +21,8 @@
 
         function load () {
             for (plugin in container) {
-                if (container.hasOwnProperty(plugin) && plugin.enabled){
-                    plugin.func();
+                if (container.hasOwnProperty(plugin) && container[plugin].enabled){
+                    container[plugin].func();
                 }
             }
         }
